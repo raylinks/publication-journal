@@ -35,10 +35,6 @@
                 </div>
             </div>
         </div>
-
-        {{-- <div class="floating-icon">
-            <button class="btn"><i class="fas fa-envelope fa-3x text-prima"></i></button>
-        </div> --}}
         @include('chattbox')
 
         <div class="text-center text-prima mt-3 font-weight-bold" style="font-size:10px">
