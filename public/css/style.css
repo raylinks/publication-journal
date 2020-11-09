@@ -1,0 +1,86 @@
+.counts{
+    color:burlywood !important; font-family: 'Alegreya', serif; font-weight:bold;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #C88937 !important;
+}
+.navbar-light .navbar-brand {
+    color: #C88937 !important;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.7) !important;
+}
+
+ .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: rgba(0,0,0,.7) !important;
+ }
+
+
+ @media only screen and (min-width: 1000px) {
+    .content-wrap{
+        margin-top: 7% !important;
+    }
+   
+  }
+
+  @media screen and (min-width : 700px) and (max-width : 999px) {
+    .content-wrap{
+        margin-top: 20% !important;
+    }
+}
+
+ @media only screen and (max-width : 700px) {
+    .content-wrap{
+        margin-top: 30% !important;
+    }
+   
+  }
+
+ body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    overflow-x: auto;
+    word-wrap: break-word
+}
+
+.home-content{
+    font-family: 'BioRhyme', serif !important;
+}
+
+.buttonless{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.content-writeup{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.content-white-writeup{
+    color: #C88937  !important; 
+    background-color:white !important;
+}
+
+.text-prima{
+    color: #C88937  !important; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link.about-link{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.active.about-link{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.content-card{
+    border-bottom:2px #C88937  solid !important;
+}
+
+.content-contact-card{
+    border-top:2px #C88937  solid !important;
+}
