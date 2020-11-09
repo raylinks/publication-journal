@@ -1,37 +1,37 @@
 .counts{
-    color:burlywood !important; font-family: 'Alegreya', serif; font-weight:bold;
+    color:#9e3623 !important; font-family: 'Alegreya', serif; font-weight:bold;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #C88937 !important;
+    color: #9e3623 !important;
 }
 .navbar-light .navbar-brand {
-    color: #C88937 !important;
+    color: #9e3623 !important;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.7) !important;
+    color:#009E60 !important;
 }
 
  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-    color: rgba(0,0,0,.7) !important;
+    color: #009E60 !important;
  }
 
 
  @media only screen and (min-width: 1000px) {
     .content-wrap{
-        margin-top: 7% !important;
+        margin-top: 9% !important;
     }
    
   }
 
   @media screen and (min-width : 700px) and (max-width : 999px) {
     .content-wrap{
-        margin-top: 20% !important;
+        margin-top: 22% !important;
     }
 }
 
  @media only screen and (max-width : 700px) {
     .content-wrap{
-        margin-top: 30% !important;
+        margin-top: 32% !important;
     }
    
   }
@@ -49,38 +49,43 @@
 }
 
 .buttonless{
-    background-color: #C88937  !important; 
-    color:white !important;
+    background-color: beige  !important; 
+    color:#9e3623 !important;
+}
+.buttonless-button{
+    background-color: #9e3623  !important; 
+    color:beige !important;
 }
 
 .content-writeup{
-    background-color: #C88937  !important; 
-    color:white !important;
+    background-color: beige  !important; 
+    color:#9e3623 !important;
 }
 
 .content-white-writeup{
-    color: #C88937  !important; 
-    background-color:white !important;
+    color: beige  !important; 
+    background-color:#9e3623 !important;
 }
 
 .text-prima{
-    color: #C88937  !important; 
+    color: #9e3623  !important; 
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link.about-link{
-    background-color: #C88937  !important; 
-    color:white !important;
+    background-color: beige  !important; 
+    /* color:#9e3623 !important; */
 }
 
-.active.about-link{
-    background-color: #C88937  !important; 
-    color:white !important;
-}
+
+/* .active.about-link{
+    background-color: beige  !important; 
+    color:#9e3623 !important;
+} */
 
 .content-card{
-    border-bottom:2px #C88937  solid !important;
+    border-bottom:2px #9e3623  solid !important;
 }
 
 .content-contact-card{
-    border-top:2px #C88937  solid !important;
+    border-top:2px #9e3623  solid !important;
 }
