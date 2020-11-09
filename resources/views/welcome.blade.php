@@ -12,7 +12,7 @@
                 <div class="d-flex justify-content-center">
                     <img src="{{asset('images/logo.gif')}}" alt="School logo" class="img-responsive img-fluid" width="100" height="100">
                 </div>
-                <div class="text-center text-capitalize font-weight-bold mt-2">
+                <div class="text-center text-capitalize font-weight-bold mt-2" style="color:beige">
                     welcome to journal of research and review in science
                 </div>
 

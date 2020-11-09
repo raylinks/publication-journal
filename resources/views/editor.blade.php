@@ -3,7 +3,7 @@
       <div class="card-header content-writeup" id="headingEditors">
         <h5 class="mb-0">
           <button class="btn text-white" data-toggle="collapse" data-target="#editors" aria-expanded="true" aria-controls="editors">
-            <strong class="font-weight-bold"> <h5>Chief Editor</h5></strong>
+            <strong class="font-weight-bold text-prima"> <h5>Chief Editor</h5></strong>
           </button>
         </h5>
       </div>
@@ -24,7 +24,7 @@
       <div class="card-header content-writeup" id="headingAssociateEditors">
         <h5 class="mb-0">
           <button class="btn text-white collapsed" data-toggle="collapse" data-target="#associateEditors" aria-expanded="false" aria-controls="associateEditors">
-            <strong class="font-weight-bold"> <h5>Associate Editors</h5></strong>
+            <strong class="font-weight-bold text-prima"> <h5>Associate Editors</h5></strong>
           </button>
         </h5>
       </div>
