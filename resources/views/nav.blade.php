@@ -21,9 +21,6 @@
                         <li class="nav-item mr-5 {{ Request::is('contact') ? 'active' : '' }}">
                         <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{url('/contact')}}"><i class="fas fa-phone"></i>Contact</a>
                         </li>
-                        <li class="nav-item mr-5">
-                            <a class="nav-link" href="#"><i class="fas fa-user"></i>Login</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
