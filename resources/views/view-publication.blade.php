@@ -24,17 +24,15 @@
                       </div>
                   
                       <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body text-center">
-                            <strong>
-                                <span>Authors: O. Enikuomehin, U. Dosumu</span>
-                            </strong>
-                            <br>
-                            Publication Year: December, 2018
-                      </div>
-                    </div>                
-                  </div>
-                </div>
-                <div id="accordion">
+                            <div class="card-body text-center">
+                                <strong>
+                                    <span>Authors: O. Enikuomehin, U. Dosumu</span>
+                                </strong>
+                                <br>
+                                Publication Year: December, 2018
+                            </div>
+                        </div>                
+                    </div>
                     <div class="card">
                       <div class="card-header content-white-writeup" id="headingOne">
                         <h5 class="mb-0">
@@ -52,15 +50,15 @@
                       </div>
                   
                       <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body text-center">
-                            <strong>
-                                <span>Authors: O. Enikuomehin, U. Dosumu</span>
-                            </strong>
-                            <br>
-                            Publication Year: December, 2018
-                      </div>
-                    </div>                
-                  </div>
+                            <div class="card-body text-center">
+                                <strong>
+                                    <span>Authors: O. Enikuomehin, U. Dosumu</span>
+                                </strong>
+                                <br>
+                                Publication Year: December, 2018
+                            </div>
+                        </div>                
+                    </div>
                 </div>
         </div>
         
