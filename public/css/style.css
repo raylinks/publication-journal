@@ -57,3 +57,26 @@
     background-color: #C88937  !important; 
     color:white !important;
 }
+
+.content-white-writeup{
+    color: #C88937  !important; 
+    background-color:white !important;
+}
+
+.text-prima{
+    color: #C88937  !important; 
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link.about-link{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.active.about-link{
+    background-color: #C88937  !important; 
+    color:white !important;
+}
+
+.content-card{
+    border-bottom:2px #C88937  solid !important;
+}

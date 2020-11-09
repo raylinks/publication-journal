@@ -2,7 +2,7 @@
         <!-- Navbar -->
         <div class="container-fluid counts">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light w-100" style="border-bottom: 3px solid burlywood; color:burlywood;">
-                <span class="navbar-brand font-weight-bolder text-truncate" style="max-width: 210px;">JRRS (Journal of Research and Review in Science)</span>
+                <span class="navbar-brand font-weight-bolder text-truncate" style="max-width: 210px;">JRRS</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars" style="color:#C88937; font-size:28px;"></i>
                 </button>
