@@ -12,7 +12,7 @@
                         <li class="nav-item mr-5 {{ Request::is('/') ? 'active' : '' }}">
                             <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{url('/')}}"><i class="fas fa-home"></i>Home</a>
                         </li>
-                        <li class="nav-item mr-5 {{ Request::is('publications') ? 'active' : '' }}">
+                        <li class="nav-item mr-5 {{ Request::is('publications') || Request::is('view-publication/2018') || Request::is('view-publication/2019') || Request::is('view-publication/2020') ? 'active' : '' }}">
                             <a class="nav-link {{ Request::is('publications') ? 'active' : '' }}" href="{{url('/publications')}}"><i class="fas fa-book"></i>Publications</a>
                         </li>
                         <li class="nav-item mr-5 {{ Request::is('about') ? 'active' : '' }}">
