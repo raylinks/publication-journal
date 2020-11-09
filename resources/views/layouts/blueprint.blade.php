@@ -26,18 +26,40 @@
 
     </head>
 
-    <body style="background-image: url('{{asset("images/bg-opaque.png")}}'); 
-                color:burlywood;">
-        @include('nav')
-        <div class="container">
-            <div class="content-wrap" style="margin-top: 9%;">
-                @yield('content')
+    <body>
+        <div style="background-image: url('{{asset("images/bg-opaque.png")}}');" class="home-bg">
+            @include('nav')
+            <div class="container">
+                <div class="content-wrap" style="margin-top: 9%;">
+                    @yield('content')
+                </div>
             </div>
         </div>
+
+        {{-- <div class="floating-icon">
+            <button class="btn"><i class="fas fa-envelope fa-3x text-prima"></i></button>
+        </div> --}}
+        @include('chattbox')
+
+        <div class="text-center text-prima mt-3 font-weight-bold" style="font-size:10px">
+            Copyright © 2020 Journal of Research and Review in Science (JRRS). All rights reserved. <br>
+            {{-- <i class="fas fa-eye"></i> --}}
+        </div>
+        
         <!-- js -->
         <script src="{{asset('js/popper.min.js')}}"></script>
         <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+        </script>
     </body>
 </html>
