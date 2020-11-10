@@ -22,3 +22,12 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/publications', function () {
+    return view('publications');
+});
+Route::get('/view-publication/{year}', function () {
+    return view('view-publication');
+});
+Route::get('/view-publication-html/{id}', function () {
+    return view('view-publication-html');
+});
