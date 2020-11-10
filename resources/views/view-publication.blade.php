@@ -34,9 +34,9 @@
                         </div>                
                     </div>
                     <div class="card">
-                      <div class="card-header content-white-writeup" id="headingOne">
+                      <div class="card-header content-white-writeup" id="headingTwo">
                         <h5 class="mb-0">
-                          <button class="btn text-white" data-toggle="collapse" data-target="#headerOne" aria-expanded="true" aria-controls="headerOne">
+                          <button class="btn text-white" data-toggle="collapse" data-target="#headerTwo" aria-expanded="true" aria-controls="headerTwo">
                             <strong class="font-weight-bold"> <h5> API ASSISTED SEMANTIC MATCHING FOR SUBJECTIVE ONLINE EXAMINATION SYSTEM </h5></strong>
                           </button>
 
@@ -49,7 +49,7 @@
                         </h5>
                       </div>
                   
-                      <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div id="headerTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body text-center">
                                 <strong>
                                     <span>Authors: O. Enikuomehin, U. Dosumu</span>
@@ -64,7 +64,7 @@
         
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="staticBackdropLabel">
