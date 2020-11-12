@@ -26,9 +26,9 @@ Route::get('/contact', function () {
 Route::get('/publications', function () {
     return view('publications');
 });
-Route::get('/view-publication/{year}', function () {
-    return view('view-publication');
-});
+// Route::get('/view-publication/{year}', function () {
+//     return view('view-publication');
+// });
 Route::get('/view-publication-html/{id}', function () {
     return view('view-publication-html');
 });
@@ -39,6 +39,8 @@ Route::view('dashboard', 'admin.index');
 
 Route::view('/admin', 'admin.index')->name('dashboard');
 
-Route::get('/publications', [PublicationController::class, 'index'])->name('index');
+Route::get('/journals', [PublicationController::class, 'index'])->name('index');
+Route::get('/view-publication/{year}', [PublicationController::class, 'viewPublication'])->name('viewPublication');
 Route::get('/create', [PublicationController::class, 'showCreate'])->name('show.create');
 Route::post('/create', [PublicationController::class, 'store'])->name('store');
+Route::get('/file/download/{id}',[PublicationController::class, 'download'])->name('downloadfile'); 

@@ -8,21 +8,25 @@
             <div class="col-md-8 offset-md-2">
                 <div id="accordion">
                     <div class="card">
+                    
+                    @foreach($journal as $request)
                       <div class="card-header content-white-writeup" id="headingOne">
                         <h5 class="mb-0">
                           <button class="btn text-white" data-toggle="collapse" data-target="#headerOne" aria-expanded="true" aria-controls="headerOne">
-                            <strong class="font-weight-bold"> <h5> API ASSISTED SEMANTIC MATCHING FOR SUBJECTIVE ONLINE EXAMINATION SYSTEM </h5></strong>
+                            <strong class="font-weight-bold"> <h5> {{$request->title}}</h5></strong>
                           </button>
 
                           <div class="d-flex justify-content-end">
                               <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
                                   <i class="fas fa-file mr-1"></i>Abstract
                                 </button>
-                              <a href="" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>PDF</a>
+                         
+                              <a href="{{route('downloadfile', $request->id )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>PDF</a>
+                          
                           </div>
                         </h5>
                       </div>
-                  
+                      @endforeach
                       <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body text-center">
                                 <strong>

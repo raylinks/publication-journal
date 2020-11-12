@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Publication;
+use Illuminate\Support\Facades\Storage;
 use App\traits\ImageUpload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -20,8 +21,31 @@ class PublicationController extends Controller
     public function index()
     {
         $publications = Publication::all();
+        
 
         return view('admin.publications.index', compact('publications'));
+    }
+
+    public function viewPublication()
+    {
+        $journal = Publication::all();
+        
+
+        return view('view-publication', compact('journal'));
+    }
+
+    public function download($id)
+    {
+        
+        $publications = Publication::find($id);
+       // dd($publications->image);
+       // return Storage::download($publications->path);
+       /// return Storage::disk('public')->download($publications->path);
+       return Storage::disk('public')->download($publications->image);
+        //return Storage::download(storage_path('app/public/image/'.$publications->image), $publications->original_name);
+        
+
+       // return view('admin.publications.index', compact('publications'));
     }
 
     /**
@@ -31,13 +55,13 @@ class PublicationController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show(Business $business)
-    {
-        $business = Business::with(['credentials', 'owner', 'services'])->find($business->id);
-        $services = Service::all();
+    // public function show(Business $business)
+    // {
+    //     $business = Business::with(['credentials', 'owner', 'services'])->find($business->id);
+    //     $services = Service::all();
 
-        return view('admin.business.show', compact('business', 'services'));
-    }
+    //     return view('admin.business.show', compact('business', 'services'));
+    // }
 
     /**
      * creates a business.
@@ -60,28 +84,19 @@ class PublicationController extends Controller
 
         if ($request->hasFile('image') ) {
             $file = $request->file('image');
-            //dd($file);
                 $fileNameToStore = $this->uploadImages($file);
-                //dd($fileNameToStore);
-                // dd($fileNameToStore);
+
                 Publication::create([
                     'title' => $request->title,
                     'author' => $request->author,
                     'year' => $request->year,
                     'image' => $fileNameToStore,
+        
     
                 ]);
         
         } else {
-            $fileNameToStore = 'noImage.jpg';
-           $a = Publication::create([
-                'title' => $request->title,
-                'author' => $request->author,
-                'year' => $request->year,
-                'image' => $fileNameToStore,
-        
-            ]);
-            dd($a);
+          dd('lov');
         }
 
       
