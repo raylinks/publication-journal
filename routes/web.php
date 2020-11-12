@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,13 @@ Route::get('/view-publication/{year}', function () {
 Route::get('/view-publication-html/{id}', function () {
     return view('view-publication-html');
 });
+
+
+
+Route::view('dashboard', 'admin.index');
+
+Route::view('/admin', 'admin.index')->name('dashboard');
+
+Route::get('/publications', [PublicationController::class, 'index'])->name('index');
+Route::get('/create', [PublicationController::class, 'showCreate'])->name('show.create');
+Route::post('/create', [PublicationController::class, 'store'])->name('store');
