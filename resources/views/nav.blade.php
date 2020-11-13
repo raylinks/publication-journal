@@ -2,7 +2,7 @@
         <!-- Navbar -->
         <div class="container-fluid counts">
             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light w-100" style="border-bottom: 3px solid #9e3623; color:#9e3623;">
-                <span class="navbar-brand font-weight-bolder text-truncate" style="font-size: 2rem; font-stretch:ultra-expanded">JRRS</span>
+                <span class="navbar-brand font-weight-bolder text-truncate" style="font-size: 2rem; font-stretch:ultra-expanded">LAJOP</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars" style="color:#9e3623; font-size:28px;"></i>
                 </button>

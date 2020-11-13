@@ -24,17 +24,22 @@
             <div class="col-md-6">
                 <div class="card text-center p-2 content-contact-card">
                     <div class="card-body text-prima">
-                        <i class="fas fa-map-marker "></i> Lagos State University, Ojo, Lagos Nigeria
+                        <i class="fas fa-home"></i> Department of Philosophy <br>
+                        Faculty of Arts
+                        
                     </div>
                 </div>
                 <div class="card text-center p-2 content-contact-card mt-2">
                     <div class="card-body text-prima">
-                        <i class="fas fa-phone "></i> (+234) 810404 1253 
+                        <i class="fas fa-map-marker "></i> Lagos State University
+                        Main Campus, KM 15, Badagry Expressway, Ojo,
+                        PMB 0001, LASU Post Office, Ojo, Lagos, Nigeria.
                     </div>
                 </div>
                 <div class="card text-center p-2 content-contact-card mt-2">
                     <div class="card-body text-prima">
-                        <i class="fas fa-envelope "></i> <a href="mailto:chiefeditor.jrrs@lasu.edu.ng "> chiefeditor.jrrs@lasu.edu.ng </a>
+                        <i class="fas fa-envelope"></i> <a href="mailto:philosophy@lasu.edu.ng "> philosophy@lasu.edu.ng</a> |
+                        <a href="mailto:ljp.philosophy@lasu.edu.ng" class=""> ljp.philosophy@lasu.edu.ng </a>
                     </div>
                 </div>
 
