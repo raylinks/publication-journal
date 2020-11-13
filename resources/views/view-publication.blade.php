@@ -5,10 +5,23 @@
 @section('content')
     <div class="home-content">
         <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <form action="" method="post" >
+                    <div class="input-group mb-3 mt-3">
+                        @csrf
+                        <input type="text" class="form-control" placeholder="I'm searching for..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn buttonless-button" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div id="accordion">
                     <div class="card">
-                    
                     @foreach($journal as $request)
                       <div class="card-header content-white-writeup" id="headingOne">
                         <h5 class="mb-0">
