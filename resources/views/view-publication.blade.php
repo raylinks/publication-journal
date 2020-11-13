@@ -9,7 +9,7 @@
                 <form action="" method="post" >
                     <div class="input-group mb-3 mt-3">
                         @csrf
-                        <input type="text" class="form-control" placeholder="I'm searching for..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="I'm searching for..." aria-label="publication search" aria-describedby="button-addon2">
                         <div class="input-group-append">
                             <button class="btn buttonless-button" type="submit"><i class="fas fa-search"></i></button>
                         </div>
