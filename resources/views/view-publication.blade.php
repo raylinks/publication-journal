@@ -17,11 +17,11 @@
                           </button>
 
                           <div class="d-flex justify-content-end">
-                              <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
+                              <!-- <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
                                   <i class="fas fa-file mr-1"></i>Abstract
-                                </button>
+                                </button> -->
                          
-                              <a href="{{route('downloadfile', $request->id )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>PDF</a>
+                              <a href="{{route('downloadfile', $request->id )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Download PDF</a>
                           
                           </div>
                         </h5>
@@ -30,39 +30,14 @@
                       <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body text-center">
                                 <strong>
-                                    <span>Authors: O. Enikuomehin, U. Dosumu</span>
+                                    <span>Authors: {{$request->author}}</span>
                                 </strong>
                                 <br>
-                                Publication Year: December, 2018
+                                Publication Year: {{$request->year}}
                             </div>
                         </div>                
                     </div>
-                    <div class="card">
-                      <div class="card-header content-white-writeup" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn text-white" data-toggle="collapse" data-target="#headerTwo" aria-expanded="true" aria-controls="headerTwo">
-                            <strong class="font-weight-bold"> <h5> API ASSISTED SEMANTIC MATCHING FOR SUBJECTIVE ONLINE EXAMINATION SYSTEM </h5></strong>
-                          </button>
-
-                          <div class="d-flex justify-content-end">
-                              <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
-                                  <i class="fas fa-file mr-1"></i>Abstract
-                                </button>
-                              <a href="" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>PDF</a>
-                          </div>
-                        </h5>
-                      </div>
-                  
-                      <div id="headerTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body text-center">
-                                <strong>
-                                    <span>Authors: O. Enikuomehin, U. Dosumu</span>
-                                </strong>
-                                <br>
-                                Publication Year: December, 2018
-                            </div>
-                        </div>                
-                    </div>
+        
                 </div>
         </div>
         

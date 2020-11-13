@@ -43,34 +43,24 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($publications as $request)
+                    @foreach($publications as $publication)
                         <tr>
                             <td></td>
-                            <td>{{ $request->title }}</td>
-                            <td>{{ $request->author }}</td>
-                            <td>{{ $request->image }}</a></td>
-                            <td>{{$request->year}}</span>
+                            <td>{{ $publication->title }}</td>
+                            <td>{{ $publication->author }}</td>
+                            <td>{{ $publication->image }}</a></td>
+                            <td>{{$publication->year}}</span>
                             </td>
-                            <td>{{$request->status}}</span>
+                            <td>{{$publication->status}}</span>
                             </td>
-                            <td>{{ $request->created_at->format('jS F, Y')}}</td>
+                            <td>{{ $publication->created_at->format('jS F, Y')}}</td>
                             <td class="text">
-                                <div class="list-icons">
-                                    <div class="dropdown">
-                                        <a href="#" class="list-icons-item" data-toggle="dropdown">
-                                            <i class="icon-menu9"></i>
-                                        </a>
-
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href=""
+                            <a href="{{ route('show', $publication->id) }}"
                                                class="dropdown-item">
-                                                View more
+                                                <i class="icon-eye"></i> Edit & update
                                             </a>
-                                            <a href=""
-                                               class="dropdown-item"> Update business</a>
-                                        </div>
-                                    </div>
-                                </div>
+                             <a href="{{route('toggle.status', $publication->id)}}" class="dropdown-item"><i class="icon-accessibility"></i> Update Status</a>
+                         
                             </td>
                         </tr>
                     @endforeach

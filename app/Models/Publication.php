@@ -10,4 +10,10 @@ class Publication extends Model
     use HasFactory;
 
     protected $fillable = ['title','author', 'image', 'year'];
+
+
+    public const STATUSES = [
+        'ACTIVE' => 'active',
+        'INACTIVE' => 'inactive',
+    ];
 }

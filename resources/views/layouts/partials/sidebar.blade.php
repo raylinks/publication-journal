@@ -50,7 +50,7 @@
                  <li class="nav-item">
                     <a href="{{route('index')}}" class="nav-link" id="earlyAccess">
                         <i class="icon-key"></i>
-                        <span>Early Access Requests</span>
+                        <span>All Publications</span>
                     </a>
                 </li>
     

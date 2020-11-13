@@ -37,10 +37,13 @@ Route::get('/view-publication-html/{id}', function () {
 
 Route::view('dashboard', 'admin.index');
 
-Route::view('/admin', 'admin.index')->name('dashboard');
+Route::view('/admin123', 'admin.index')->name('dashboard');
 
 Route::get('/journals', [PublicationController::class, 'index'])->name('index');
+Route::get('/edit/journal/{id}', [PublicationController::class, 'show'])->name('show');
+Route::post('{publication}/update/journal', [PublicationController::class, 'update'])->name('show.update');
 Route::get('/view-publication/{year}', [PublicationController::class, 'viewPublication'])->name('viewPublication');
 Route::get('/create', [PublicationController::class, 'showCreate'])->name('show.create');
 Route::post('/create', [PublicationController::class, 'store'])->name('store');
+Route::get('{publication}/toggle-status', [PublicationController::class, 'togglePublicationStatus'])->name('toggle.status');
 Route::get('/file/download/{id}',[PublicationController::class, 'download'])->name('downloadfile'); 
