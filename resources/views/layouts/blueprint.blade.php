@@ -22,7 +22,7 @@
         <script src="{{asset('js/jquery-3.5.1.slim.min.js')}}"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-        <title>JRRS | @yield('mytitle')</title>
+        <title>LAJOP | @yield('mytitle')</title>
 
     </head>
 
@@ -38,7 +38,7 @@
         @include('chattbox')
 
         <div class="text-center text-prima mt-3 font-weight-bold" style="font-size:10px">
-            Copyright © 2020 Journal of Research and Review in Science (JRRS). All rights reserved. <br>
+            Copyright © 2020 LASU Journal of Philosophy (LAJOP). All rights reserved. <br>
             {{-- <i class="fas fa-eye"></i> --}}
         </div>
         
