@@ -66,7 +66,7 @@
                                 Main Campus, KM 15, Badagry Expressway, Ojo, <br>
                                 PMB 0001, LASU Post Office, Ojo, Lagos, Nigeria. <br>
                                 Email: <a href="mailto:philosophy@lasu.edu.ng">philosophy@lasu.edu.ng</a> |
-                                <a href="mailto:editor.jrrs@lasu.edu.ng">ljp.philosophy@lasu.edu.ng</a>
+                                <a href="mailto:ljp.philosophy@lasu.edu.ng">ljp.philosophy@lasu.edu.ng</a>
                             </div>
                         </div>
                       </div>
