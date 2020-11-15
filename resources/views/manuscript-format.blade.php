@@ -79,7 +79,7 @@
       </div>
       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
         <div class="card-body" style="line-height: 2rem">
-          Full papers must not exceed 4500 words and must be prepared for blind review.
+          Full papers must  be a minimum of 4000  words and must be prepared for blind review.
           Submission should be accompanied by a separate file containing your brief bio- sketch (not more than 300 words) to include name and contact information (affiliation, address, telephone number, and e-mail address). 
         </div>
       </div>

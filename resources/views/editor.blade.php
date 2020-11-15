@@ -151,10 +151,10 @@
                         <div class="card text-center">
                             <div class="card-body content-card">
                                 <strong>
-                                    <span>Prof. Ebunoluwa Oduwole Olabisi</span>
+                                    <span>Prof. Ebunoluwa Oduwole</span>
                                 </strong>
                                 <br>
-                                Onabanjo University, <br>
+                                Olabisi Onabanjo University, <br>
                                 Ago-Iwoye, Nigeria
                             </div>
                         </div>
@@ -168,11 +168,25 @@
                         <div class="card text-center">
                             <div class="card-body content-card">
                                 <strong>
-                                    <span>Prof. A.S. Ihuah</span>
+                                    <span>Prof. A.S. Jhuah</span>
                                 </strong>
                                 <br>
                                 Benue State University <br>
                                 Makurdi, Nigeria
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-center">
+                        <div class="card text-center">
+                            <div class="card-body content-card">
+                                <strong>
+                                    <span>Prof. Bolatito Lanre-Abass,</span>
+                                </strong>
+                                <br>
+                                University of Ibadan, <br>
+                                Ibadan, Nigeria
                             </div>
                         </div>
                     </div>
