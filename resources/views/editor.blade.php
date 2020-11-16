@@ -163,7 +163,7 @@
             </div>
 
             <div class="row mt-3">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-6">
                     <div class="card text-center">
                         <div class="card text-center">
                             <div class="card-body content-card">

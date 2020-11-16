@@ -22,7 +22,7 @@
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <div class="card content-writeup shadow-lg p-3 mb-5 rounded">
-                            <div class="card-body" style="padding-bottom:15%">
+                            <div class="card-body" style="padding-bottom:68%;">
                                 LASU   Journal   of   Philosophy   (LAJOP)   is   an  interdisciplinary  annual   publication   of   the   Department   of Philosophy,   Lagos   State   University,   Ojo,   Lagos,   Nigeria.
                                 <p></p>
                                 The   Journal   is   interested   in publishing   original   articles   in   traditional   and   emerging   fields   of   philosophy, including interdisciplinary research in related fields with a philosophical approach <br>
@@ -32,8 +32,8 @@
                     <div class="col-md-6">
                         <div class="card content-writeup shadow-lg p-3 mb-5 rounded">
                             <div class="card-body mb-1">
-                            It aims at publishing research findings, exploring not only the various thematic dimensions of philosophy, history of philosophy and from different philosophical traditions, but also themes that illuminate the practical relevance of philosophy to the different aspects of the individual and social existence.
-                            <p></p>
+                                It aims at publishing research findings, exploring not only the various thematic dimensions of philosophy, history of philosophy and from different philosophical traditions, but also themes that illuminate the practical relevance of philosophy to the different aspects of the individual and social existence.
+                                <p></p>
                                 The Department of Philosophy, Lagos State University, retains the copyright to the articles published in the journal.                                
                                 <p></p>
                                 However, the contributors are responsible for the views and claims expressed in their papers. <br>
