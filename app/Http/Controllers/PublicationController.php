@@ -29,9 +29,18 @@ class PublicationController extends Controller
 
     public function viewPublication()
     {
-        $journal = Publication::where('status', 'active')->get();
+       if(request()->query('year')){
+        $journal = Publication::where(['status' => 'active', 'year' =>  request()->query('year')])->get();
 
         return view('view-publication', compact('journal'));
+
+       }else{
+        $journal = Publication::all();
+
+        return view('view-publication', compact('journal'));
+       }
+             
+        
     }
 
     public function download($id)
@@ -140,6 +149,19 @@ class PublicationController extends Controller
         ]);
     }
 
+    public function publicationCount(){
+
+        $counts = Publication::whereIn('year', ['2018', '2019', '2020'])->get();
+
+        $response = [
+            "2018" => $counts->where('year', "2018")->count(),
+            "2019" => $counts->where('year', "2019")->count(),
+            "2020" => $counts->where('year', "2020")->count()
+        ];
+
+        return view('publications', compact('response'));
+    }
+
     public function togglePublicationStatus(Publication $publication)
     {
     
@@ -151,6 +173,8 @@ class PublicationController extends Controller
             'type' => 'success',
             'message' => 'Business updated successfully.',
         ]);
+
+       
     }
 
 
