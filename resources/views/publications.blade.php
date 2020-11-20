@@ -14,10 +14,10 @@
             @endphp
                 <div class="card text-center p-2 card-counter">
                     <div class="card-body text-prima">
-                        <a href="/view-publication/?year=2018"  class="text-prima" style="text-decoration: none">
-                            <div class=" mb-2"> <strong class="counter">{{$count18}}</strong> Publications</div>
+                        <a href="/view-publication/?year=2020"  class="text-prima" style="text-decoration: none">
+                            <div class=" mb-2"> <strong class="counter">{{$count20}}</strong> Publications</div>
                             <div class=" mb-2">
-                                <strong> (2018)</strong>
+                                <strong> (2020)</strong>
                             </div>
                         </a>
                     </div>
@@ -38,10 +38,10 @@
             <div class="col-md-4">
                 <div class="card text-center p-2 card-counter">
                     <div class="card-body text-prima">
-                        <a href="/view-publication/?year=2020" class="text-prima" style="text-decoration: none">
-                            <div class=" mb-2"> <strong class="counter">{{ $count20}}</strong> Publications</div>
+                        <a href="/view-publication/?year=2018" class="text-prima" style="text-decoration: none">
+                            <div class=" mb-2"> <strong class="counter">{{ $count18}}</strong> Publications</div>
                             <div class="mb-2">
-                                <strong> (2020)</strong>
+                                <strong> (2018)</strong>
                             </div>
                         </a>
                     </div>

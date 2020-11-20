@@ -41,6 +41,7 @@
                 <div class="card-body">
                     <form action="{{route('store')}}" method="POST"  enctype="multipart/form-data" >
                         @csrf
+                       
                         <div class="form-group">
                             <label>Publication title:</label>
                             <input type="text" required  class="form-control" name="title"
@@ -64,7 +65,16 @@
                     
                             </select>
                         </div>
-                
+                        <div class="form-group ">
+                            <label class="d-block">Publication Status</label>
+                            <select class="form-control " style="opacity:1 !important;" name="status" data-fouc>
+                        
+                                <option value="inactive">inactive</option>
+                             
+                    
+                            </select>
+                        </div>
+                       
                         <div class="d-flex justify-content-start align-items-center">
                             <a href="{{ route('index') }}" class="btn btn-light">Cancel</a>
                             <button type="submit" class="btn bg-blue ml-3">Submit <i class="icon-paperplane ml-2"></i>

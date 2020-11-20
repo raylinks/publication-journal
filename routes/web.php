@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\PublicationController;
 
 /*
@@ -33,13 +34,16 @@ Route::get('/view-publication-html/{id}', function () {
     return view('view-publication-html');
 });
 
+Route::get('/foo', function () {
+    Artisan::call('storage:link');
+});
 
 
 Route::view('dashboard', 'admin.index');
 
 Route::view('/admin123', 'admin.index')->name('dashboard');
 
-Route::get('/journals/{year)', [PublicationController::class, 'index'])->name('index');
+Route::get('/journals', [PublicationController::class, 'index'])->name('index');
 Route::get('/edit/journal/{id}', [PublicationController::class, 'show'])->name('show');
 Route::post('{publication}/update/journal', [PublicationController::class, 'update'])->name('show.update');
 Route::get('/view-publication', [PublicationController::class, 'viewPublication'])->name('viewPublication');

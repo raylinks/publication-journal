@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Publication;
 use Illuminate\Support\Facades\Storage;
 use App\traits\ImageUpload;
+use App\traits\UploadFile;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -61,7 +62,7 @@ class PublicationController extends Controller
    
     public function store(Request $request)
     {
-      //dd($request->hasFile('image'));
+       // dd($request->all());
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|min:3|max:191',
             'image' => 'required|file|max:12048|mimes:jpeg,jpg,bmp,png,gif,svg,pdf',
@@ -75,14 +76,15 @@ class PublicationController extends Controller
             $file = $request->file('image');
                 $fileNameToStore = $this->uploadImages($file);
 
-                Publication::create([
+               $publication =  Publication::create([
                     'title' => $request->title,
                     'author' => $request->author,
                     'year' => $request->year,
                     'image' => $fileNameToStore,
-                    'status' => "inactive"
+                   // 'status' => $request->status
         
                 ]);
+               // dd($publication);
         
         } else {
             $fileNameToStore = "noImage";
@@ -91,7 +93,7 @@ class PublicationController extends Controller
             'author' => $request->author,
             'year' => $request->year,
             'image' => $fileNameToStore,
-            'status' => "active"
+           // 'status' => "active"
         ]);
         }
 

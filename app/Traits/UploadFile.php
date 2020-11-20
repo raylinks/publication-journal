@@ -25,7 +25,7 @@ trait UploadFile
         $fileNameToStore = $fileName.'_'.$randomString.'_'.time().'.'.$extension;
 
         if (is_null($disk)) {
-            $disk = config('patricia.disk_folder');
+            $disk = config('publication.disk_folder');
         }
 
         $file->storeAs($folder, $fileNameToStore, $disk);

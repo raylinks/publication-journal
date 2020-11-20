@@ -19,7 +19,7 @@ class CreatePublicationsTable extends Migration
             $table->string('image')->nullable();
             $table->string('year');
             $table->string('author');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
