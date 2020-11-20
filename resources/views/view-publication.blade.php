@@ -39,7 +39,7 @@
                           </div>
                         </h5>
                       </div>
-                      @endforeach
+                      
                       <div id="headerOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body text-center">
                                 <strong>
@@ -50,8 +50,10 @@
                             </div>
                         </div>                
                     </div>
+                   
         
                 </div>
+                 @endforeach
         </div>
         
         <!-- Modal -->
