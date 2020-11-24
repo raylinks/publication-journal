@@ -44,6 +44,7 @@ Route::view('dashboard', 'admin.index');
 Route::view('/admin123', 'admin.index')->name('dashboard');
 
 Route::get('/journals', [PublicationController::class, 'index'])->name('index');
+Route::get('/article/view', [PublicationController::class, 'article'])->name('article');
 Route::get('/edit/journal/{id}', [PublicationController::class, 'show'])->name('show');
 Route::post('{publication}/update/journal', [PublicationController::class, 'update'])->name('show.update');
 Route::get('/view-publication', [PublicationController::class, 'viewPublication'])->name('viewPublication');
@@ -52,3 +53,8 @@ Route::post('/create', [PublicationController::class, 'store'])->name('store');
 Route::get('{publication}/toggle-status', [PublicationController::class, 'togglePublicationStatus'])->name('toggle.status');
 Route::get('/file/download/{id}',[PublicationController::class, 'download'])->name('downloadfile'); 
 Route::get('/publication/count)', [PublicationController::class, 'publicationCount'])->name('count');
+
+
+Route::get('/article/view', function () {
+    return view('view-article');
+});

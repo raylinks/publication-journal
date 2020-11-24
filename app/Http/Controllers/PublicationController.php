@@ -178,5 +178,10 @@ class PublicationController extends Controller
        
     }
 
+    // public function article()
+    // {
+    //     $article = Article::
+    // }
+
 
 }
