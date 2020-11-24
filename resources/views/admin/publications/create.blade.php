@@ -55,6 +55,10 @@
                             <label>Publication PDF:</label>
                             <input type="file" class="form-control"  name="image"  id="image" >
                         </div>
+                        <div class="form-group">
+                            <label>Abstract PDF:</label>
+                            <input type="file" class="form-control"  name="picture"  id="picture" >
+                        </div>
                         <div class="form-group ">
                             <label class="d-block">Publication Year</label>
                             <select class="form-control " style="opacity:1 !important;" name="year" data-fouc>

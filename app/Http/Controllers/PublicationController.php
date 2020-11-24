@@ -74,14 +74,17 @@ class PublicationController extends Controller
 
         if ($request->hasFile('image') ) {
             $file = $request->file('image');
+            $picture = $request->file('picture');
                 $fileNameToStore = $this->uploadImages($file);
+                $pictureNameToStore = $this->uploadImages($picture);
 
                 Publication::create([
                     'title' => $request->title,
                     'author' => $request->author,
                     'year' => $request->year,
                     'image' => $fileNameToStore,
-                    'status' => "inactive"
+                    'status' => "inactive",
+                    "picture" => $pictureNameToStore
         
                 ]);
         
@@ -178,10 +181,14 @@ class PublicationController extends Controller
        
     }
 
-    // public function article()
-    // {
-    //     $article = Article::
-    // }
+    public function article($id)
+    {
+        $publication = Publication::find($id);
+       // dd($publication);
+       $aa = Storage::disk('public')->path($publication->picture);
+     
+        return view('view-article', compact('publication'));
+    }
 
 
 }

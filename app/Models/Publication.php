@@ -9,7 +9,7 @@ class Publication extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title','author', 'image', 'year'];
+    protected $fillable = ['title','author', 'image', 'year','picture'];
 
 
     public const STATUSES = [

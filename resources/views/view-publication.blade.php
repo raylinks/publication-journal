@@ -33,7 +33,7 @@
                               <!-- <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
                                   <i class="fas fa-file mr-1"></i>Abstract
                                 </button> -->
-                                <a href="{{url('/article/view' )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Article PDF</a>
+                                <a href="{{url('/article/view', $request->id  )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Article PDF</a>
                           
                               <a href="{{route('downloadfile', $request->id )}}" class="btn btn-sm buttonless mr-3" target="_blank"><i class="fas fa-file-pdf mr-1"></i>Download PDF</a>
                           
