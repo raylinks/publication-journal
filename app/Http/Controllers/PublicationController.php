@@ -66,17 +66,21 @@ class PublicationController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|min:3|max:191',
             'image' => 'required|file|max:12048|mimes:jpeg,jpg,bmp,png,gif,svg,pdf',
+            'picture' => 'required|file|max:12048|mimes:jpeg,jpg,bmp,png,gif,svg,pdf',
             'year' => 'nullable|string',
             'author' => 'required|string|min:6',
         ],[
             'image.required' => 'An image needs to be uploaded'
         ]);
 
+       // $imageResponse = cloudinary()->upload($request->file('image')->getRealPath())->getSecurePath();
+        $pictureResponse = cloudinary()->upload($request->file('picture')->getRealPath())->getSecurePath();
+
+
         if ($request->hasFile('image') ) {
             $file = $request->file('image');
-            $picture = $request->file('picture');
+         
                 $fileNameToStore = $this->uploadImages($file);
-                $pictureNameToStore = $this->uploadImages($picture);
 
                 Publication::create([
                     'title' => $request->title,
@@ -84,20 +88,11 @@ class PublicationController extends Controller
                     'year' => $request->year,
                     'image' => $fileNameToStore,
                     'status' => "inactive",
-                    "picture" => $pictureNameToStore
+                    "picture" => $pictureResponse
         
                 ]);
-        
-        } else {
-            $fileNameToStore = "noImage";
-          Publication::create([
-            'title' => $request->title,
-            'author' => $request->author,
-            'year' => $request->year,
-            'image' => $fileNameToStore,
-            'status' => "active"
-        ]);
         }
+
 
         return redirect(route('index'))->with([
             'type' => 'success',
@@ -185,7 +180,8 @@ class PublicationController extends Controller
     {
         $publication = Publication::find($id);
        // dd($publication);
-       $aa = Storage::disk('public')->path($publication->picture);
+       //$aa = Storage::disk('public')->path($publication->picture);
+      // return response()->file($pathToFile);
      
         return view('view-article', compact('publication'));
     }

@@ -28,4 +28,32 @@ trait ImageUpload
 
         return $fileNameToStore;
     }
+
+
+    public function uploadPicture($query)
+    {
+        //get the filename with ext
+        $fileNameWithExt = $query->getClientOriginalName();
+
+
+        //get just the filename
+        $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+
+
+        //get just the ext
+        $extension = $query->getClientOriginalExtension();
+        
+
+
+        // create filename to store
+        $fileNameToStore = $fileName . '_' . time() . '.' . $extension;
+
+
+        $photo = $query->move(public_path().'/images/', $fileNameToStore);
+
+        //upload image
+       // $query->storeAs('public/image', $fileNameToStore);
+
+        return $photo;
+    }
 }

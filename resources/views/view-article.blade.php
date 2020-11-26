@@ -52,5 +52,5 @@ text-align: center;
 		</div>
 	</div>
     <div id="pdfCanvasContainer" class="pdf-frame">
-		<iframe src="/storage/image/{{ $publication->picture}}" width="100%" height="100%" style="min-height: 500px;" allowfullscreen="" webkitallowfullscreen="" _idm_frm_="6783"></iframe>
+		<iframe src="{{ $publication->picture }}" width="100%" height="100%" style="min-height: 500px;" allowfullscreen="" webkitallowfullscreen="" _idm_frm_="6783"></iframe>
 	</div>

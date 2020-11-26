@@ -23,10 +23,10 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-12 text-center">
-                                        LASU Journal of Philosophy (LAJOP) is an annual publication of the Department of Philosophy, 
-                                        Lagos State University, Ojo, Lagos, Nigeria.
+                                        LASU Journal of Philosophy (LAJOP) is an interdisciplinary annual publication of the Department of Philosophy, Lagos State University, Ojo, Lagos, Nigeria.
                                         <p></p>
-                                        The Journal is interested in publishing original articles in traditional and emerging fields of philosophy. It aims at publishing research findings, exploring not only the various thematic dimensions of philosophy, 
+                                        The Journal is interested in publishing original articles in traditional and emerging fields of philosophy, including interdisciplinary research in related fields with a philosophical approach.
+                                        <p></p>It aims at publishing research findings, exploring not only the various thematic dimensions of philosophy, 
                                         history of philosophy and from different philosophical traditions, but also themes that illuminate the practical relevance of philosophy to the different aspects of the individual and social existence. 
                                         <p></p>
                                         The Department of Philosophy, Lagos State University, retains the copyright to the articles published in the journal. 

@@ -35,7 +35,6 @@
                         <th>S/N</th>
                         <th>Title</th>
                         <th>Author</th>
-                        <th>Image</th>
                         <th>Year</th>
                         <th>Status</th>
                         <th>Date Created</th>
@@ -48,7 +47,6 @@
                             <td></td>
                             <td>{{ $publication->title }}</td>
                             <td>{{ $publication->author }}</td>
-                            <td>{{ $publication->image }}</a></td>
                             <td>{{$publication->year}}</span>
                             </td>
                             <td>{{$publication->status}}</span>

@@ -138,10 +138,10 @@
                     <div class="card text-center">
                         <div class="card-body content-card">
                             <strong>
-                                <span>Prof. Abiodun Balogun Olabisi</span>
+                                <span>Prof. Abiodun Balogun </span>
                             </strong>
                             <br>
-                            Onabanjo University, <br>
+                            Olabisi Onabanjo University, <br>
                             Ago-Iwoye, Nigeria                             
                         </div>
                     </div>
