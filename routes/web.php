@@ -53,6 +53,8 @@ Route::post('/create', [PublicationController::class, 'store'])->name('store');
 Route::get('{publication}/toggle-status', [PublicationController::class, 'togglePublicationStatus'])->name('toggle.status');
 Route::get('/file/download/{id}',[PublicationController::class, 'download'])->name('downloadfile'); 
 Route::get('/publication/count)', [PublicationController::class, 'publicationCount'])->name('count');
+Route::get('/publication/delete/{id}', [PublicationController::class, 'deletePublication'])->name('delete.journal');
+
 
 
 Route::get('/article/view', function () {

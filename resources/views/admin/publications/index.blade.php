@@ -54,10 +54,18 @@
                             <td>{{ $publication->created_at->format('jS F, Y')}}</td>
                             <td class="text">
                             <a href="{{ route('show', $publication->id) }}"
-                                               class="dropdown-item">
+                            class="btn btn-outline-primary view_details">
                                                 <i class="icon-eye"></i> Edit & update
                                             </a>
-                             <a href="{{route('toggle.status', $publication->id)}}" class="dropdown-item"><i class="icon-accessibility"></i> Update Status</a>
+                             <a href="{{route('toggle.status', $publication->id)}}" class="btn btn-outline-primary view_details"><i class="icon-accessibility"></i> Update Status</a>
+                             <form class="" action="{{ route('delete.journal', $publication->id) }}"
+                                                          method="GET">
+
+                                                        <button type="submit" onclick="return confirm('Are you sure? you want  to  delete this  Publication??')"  class="btn btn-outline-primary view_details">
+                                                        <span id="btn-text">Delete Journal</span>
+                                                        </button>
+                                                    </form>
+                          
                          
                             </td>
                         </tr>

@@ -186,5 +186,13 @@ class PublicationController extends Controller
         return view('view-article', compact('publication'));
     }
 
+    public function deletePublication($id)
+    {
+              $deletePub = Publication::find($id);
+              $deletePub->delete();         
+
+              return redirect()->back()->with('danger', 'Publication Deleted');
+                      
+    }
 
 }
