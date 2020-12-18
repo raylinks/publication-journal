@@ -55,6 +55,8 @@ Route::get('/file/download/{id}',[PublicationController::class, 'download'])->na
 Route::get('/publication/count)', [PublicationController::class, 'publicationCount'])->name('count');
 Route::get('/publication/delete/{id}', [PublicationController::class, 'deletePublication'])->name('delete.journal');
 
+Route::get('/view-search', [PublicationController::class, 'search'])->name('search');
+
 
 
 Route::get('/article/view', function () {

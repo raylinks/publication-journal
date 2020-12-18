@@ -9,11 +9,13 @@
             <form action="" method="post">
                 <div class="input-group mb-3 mt-3">
                     @csrf
-                    <input type="text" class="form-control" placeholder="I'm searching for.."
+                    <input type="text" name="publication" id="publication" class="form-control" placeholder="I'm searching for.."
                         aria-label="publication search">
                     <div class="input-group-append">
                         <button class="btn buttonless-button" type="submit"><i class="fas fa-search"></i></button>
                     </div>
+
+                    <div id="publication_list"></div>  
                 </div>
             </form>
         </div>
@@ -24,14 +26,14 @@
     <div class="col-md-8 offset-md-2">
         @foreach($journal as $request)
         <div id="accordion">
-            <div class="card">
-                <div class="card-header content-white-writeup" id="headingOne">
+   
                     <h5 class="mb-0">
                         <button class="btn text-white" data-toggle="collapse" data-target="#headerOne"
                             aria-expanded="true" aria-controls="headerOne">
                             <strong class="font-weight-bold">
-                                <h1> {{$request->title}}</h1>
-                                <span>Authors: {{$request->author}}</span>
+                                
+                                <span  class="text-muted"  style="color:black;"> {{$request->author}}</span>
+                                <h6   class="text-dark" style="color:black;"> {{$request->title}}</h1>
                             </strong>
                         </button>
 ​
@@ -44,9 +46,7 @@
 ​
                         </div>
                     </h5>
-                </div>
-​
-            </div>
+               
         </div>
         @endforeach
 ​
@@ -92,5 +92,43 @@
         </div>
     </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            // jQuery wait till the page is fullt loaded
+            $(document).ready(function () {
+                // keyup function looks at the keys typed on the search box
+                $('#publication').click(function(){
+                    // the text typed in the input field is assigned to a variable 
+                    var query = $(this).val();
+                    // call to an ajax function
+                    $.ajax({
+                        // assign a controller function to perform search action - route name is search
+                        url:"{{ route('search') }}",
+                        // since we are getting data methos is assigned as GET
+                        type:"GET",
+                        // data are sent the server
+                        data:{'publication':query},
+                        // if search is succcessfully done, this callback function is called
+                        success:function (data) {
+                            // print the search results in the div called country_list(id)
+                            $('#publication_list').html(data);
+                        }
+                    })
+                    // end of ajax call
+                });
+
+                // initiate a click function on each search result
+                $(document).on('click', 'li', function(){
+                    // declare the value in the input field to a variable
+                    var value = $(this).text();
+                    // assign the value to the search box
+                    $('#publication').val(value);
+                    // after click is done, search results segment is made empty
+                    $('#publication_list').html("");
+                });
+            });
+        </script>
 ​
 @endsection

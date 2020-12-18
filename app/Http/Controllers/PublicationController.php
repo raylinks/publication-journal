@@ -39,10 +39,38 @@ class PublicationController extends Controller
         $journal = Publication::all();
 
         return view('view-publication', compact('journal'));
-       }
-             
-        
+       }  
     }
+
+    public function search(Request $request){
+        // check if ajax request is coming or not
+        if($request->ajax()) {
+            // select country name from database
+            $data = Publication::where('title', 'LIKE', $request->publication.'%')
+                ->get();
+            // declare an empty array for output
+            $output = '';
+            // if searched countries count is larager than zero
+            if (count($data)>0) {
+                // concatenate output to the array
+                $output = '<ul class="list-group" style="display: block; position: relative; z-index: 1">';
+                // loop through the result array
+                foreach ($data as $row){
+                    // concatenate output to the array
+                    $output .= '<li class="list-group-item">'.$row->title.'</li>';
+                }
+                // end of output
+                $output .= '</ul>';
+            }
+            else {
+                // if there's no matching results according to the input
+                $output .= '<li class="list-group-item">'.'No results'.'</li>';
+            }
+            // return output result array
+            return $output;
+        }
+    }
+    
 
     public function download($id)
     {    
