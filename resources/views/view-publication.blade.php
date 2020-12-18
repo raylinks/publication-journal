@@ -6,24 +6,25 @@
 <div class="home-content">
     <div class="row">
         <div class="col-md-10 offset-md-1">
-            <form action="" method="post">
                 <div class="input-group mb-3 mt-3">
                     @csrf
                     <input type="text" name="publication" id="publication" class="form-control" placeholder="I'm searching for.."
                         aria-label="publication search">
                     <div class="input-group-append">
-                        <button class="btn buttonless-button" type="submit"><i class="fas fa-search"></i></button>
+                        <button class="btn buttonless-button"><i class="fas fa-search"></i></button>
                     </div>
 
                     <div id="publication_list"></div>  
-                </div>
-            </form>
+                </div> 
         </div>
     </div>
 </div>
-​
+
+
 <div class="row">
     <div class="col-md-8 offset-md-2">
+        <h3 class="text-info">Articles</h3>
+        <hr/>
         @foreach($journal as $request)
         <div id="accordion">
    
@@ -36,24 +37,24 @@
                                 <h6   class="text-dark" style="color:black;"> {{$request->title}}</h1>
                             </strong>
                         </button>
-​
+
                         <div class="d-flex justify-content-end">
                             <!-- <button class="btn btn-sm buttonless mr-3" data-toggle="modal" data-target="#staticBackdrop">
                                             <i class="fas fa-file mr-1"></i>Abstract
                                             </button> -->
                             <a href="{{url('/article/view', $request->id  )}}" class="btn btn-sm buttonless mr-3"
                                 target="_blank"><i class="fas fa-file-pdf mr-1"></i>Article PDF</a>
-​
+
                         </div>
                     </h5>
                
         </div>
         @endforeach
-​
-​
+
+
     </div>
 </div>
-​
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -130,5 +131,5 @@
                 });
             });
         </script>
-​
+
 @endsection
